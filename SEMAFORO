@@ -1,0 +1,34 @@
+//SEMAFORO
+
+
+int rosso = 13;
+int arancione = 11;
+int verde = 6;
+
+void setup() {
+  pinMode(rosso, OUTPUT);
+  pinMode(arancione, OUTPUT);
+  pinMode(verde, OUTPUT);
+}
+
+void loop() {
+
+  // ROSSO
+  digitalWrite(rosso, HIGH);
+  digitalWrite(arancione, LOW);
+  digitalWrite(verde, LOW);
+  delay(5000); 
+   // ARANCIONE
+  digitalWrite(rosso, LOW);
+  digitalWrite(arancione, HIGH);
+  digitalWrite(verde, LOW);
+  delay(2000); 
+
+  // VERDE
+  digitalWrite(rosso, LOW);
+  digitalWrite(arancione, LOW);
+  digitalWrite(verde, HIGH);
+  delay(5000); 
+
+  
+}
